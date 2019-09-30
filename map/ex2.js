@@ -41,10 +41,35 @@ En sortie: [
 ]
 
  */
-
-function getFoodCategories(foods) {
+tableau = [ {
+  food: 'Bacon',
+  isVegetarian: false
+},
+{
+  food: 'Sausage',
+  isVegetarian: false
+},
+{
+  food: 'Tofu',
+  isVegetarian: true
+},
+{
+  food: 'Chick Pea',
+  isVegetarian: true
 }
+]
 
+
+const getFoodCategories = tableau.map(table => {
+  if (table.isVegetarian === true) {
+    return table.food + " is suitable for vegetarians"
+  }
+  else {
+    return table.food + " is not suitable for vegetarians"
+  }
+  })
+
+  console.log(getFoodCategories);
 
 
 // Ne pas modifier l'export
