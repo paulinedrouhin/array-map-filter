@@ -1,7 +1,7 @@
 {
-  "name": "quete-map-filter",
+  "name": "array-map-filter",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Installation",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -9,15 +9,18 @@
   "scripts": {
     "test": "./node_modules/jest/bin/jest.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulinedrouhin/array-map-filter.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "jest": "^25.0.0",
-    "jest-check-cross-reporter": "^0.1.0"
+  "bugs": {
+    "url": "https://github.com/paulinedrouhin/array-map-filter/issues"
   },
-  "jest": {
-    "reporters": [
-      "jest-check-cross-reporter"
-    ]
+  "homepage": "https://github.com/paulinedrouhin/array-map-filter#readme",
+  "dependencies": {
+    "jest": "^24.9.0",
+    "jest-check-cross-reporter": "^0.1.0"
   }
 }

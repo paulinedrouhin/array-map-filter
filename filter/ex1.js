@@ -13,10 +13,11 @@ Sortie attendue:
 
  const numbers = [7, -4, 2, 0, -10, 3, 11];
 
- let getPositiveNumbers = numbers.filter(number => {
+ function getPositiveNumbers() { 
+   return numbers.filter(number => {
     return number >= 0;
 
- })
+ }) }
 
  console.log(getPositiveNumbers);
 

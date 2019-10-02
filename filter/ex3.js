@@ -36,11 +36,12 @@ Sortie attendue:
   { name: 'Huawei P20 Pro', price: 649 }
 ]
 
-const filterOnPrice = phones.filter(phone => {
-  return phone.price <= 500;
-});
+function filterOnPrice(phones, num) {
+  return phones.filter(phone => {
+    return phone.price <= num;
+  }); 
+}
 
-console.log(filterOnPrice);
 
 // Ne pas modifier l'export
 module.exports = filterOnPrice;

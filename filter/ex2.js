@@ -32,11 +32,12 @@ Sortie attendue:
   'Sansa Stark'
 ]
 
-const keepStarks = got.filter(people => {
+function keepStarks() { 
+  return got.filter(people => {
   return people.endsWith('Stark');
-})
+}) }
 
-console.log(keepStarks)
+console.log(keepStarks())
 
 // Ne pas modifier l'export
 module.exports = keepStarks;

@@ -78,7 +78,8 @@ movies = [
   }
 ]
 
-const getMoviesFreshness = movies.map(movie => {
+function getMoviesFreshness() {
+  return  movies.map(movie => {
   if (movie.rating > 75) {
     movie.label = 'certified fresh'
     }
@@ -90,7 +91,7 @@ const getMoviesFreshness = movies.map(movie => {
   }
   return movie
 
-  })
+  })}
 
 console.log(getMoviesFreshness)
 

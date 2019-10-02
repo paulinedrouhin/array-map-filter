@@ -60,14 +60,15 @@ tableau = [ {
 ]
 
 
-const getFoodCategories = tableau.map(table => {
+function getFoodCategories() { 
+  return tableau.map(table => {
   if (table.isVegetarian === true) {
     return table.food + " is suitable for vegetarians"
   }
   else {
     return table.food + " is not suitable for vegetarians"
   }
-  })
+  }) }
 
   console.log(getFoodCategories);
 

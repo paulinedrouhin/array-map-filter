@@ -21,10 +21,12 @@ En sortie: [
 
  */
 
-let strings = ['Cat', 'Lion', 'Tiger', 'Jaguar', 'Leopard']
+let strings = ['Chicken', 'Bacon', 'Tofu', 'Mayonnaise']
 
-const getStringsLength = strings.map(string => { return `${string} contains ${string.length} characters`})
+function getStringsLength() {
+return strings.map(string => { return `${string} contains ${string.length} characters`})
 ;
+}
 
 console.log(getStringsLength);
 
